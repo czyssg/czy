@@ -1,0 +1,12 @@
+# This is a sample of Makefile
+# Written by David for learning
+myprg: main.o part1.o part2.o part3.o
+gcc -o myprg main.o part1.o part2.o part3.o
+main.o: main.c
+  gcc -c main.c
+part1.o: part1.c head.h
+  gcc -c part1.c
+part2.o: part2.c head.h
+  gcc -c part2.c
+part3.o: part3.c head.h
+  gcc -c part3.c  
